@@ -20,6 +20,16 @@ async function enviarImagen(nombre, precio, imagen){
     
     return conexionConvertida;
 }
+async function eliminarProducto(id) {
+    const response = await fetch(`http://localhost:3001/pokemons/${id}`, {
+        method: 'DELETE'
+    });
+    if (response.ok) {
+        console.log(`Producto con id ${id} eliminado`);
+    } else {
+        console.error('Error al eliminar el producto');
+    }
+}
 
 
-export const conexionAPI = { listarImagenes, enviarImagen };
+export const conexionAPI = { listarImagenes, enviarImagen, eliminarProducto };

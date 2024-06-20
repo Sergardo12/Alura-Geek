@@ -14,6 +14,12 @@ function crearCard(nombre, precio, imagen){
                                 <button class="btnEliminar">Eliminar</button>
                             </div>
                         </li>`;
+    const eliminar = tarjeta.querySelector(".btnEliminar");
+    eliminar.addEventListener("click", ()=> {
+        conexionAPI.eliminarProducto(id).then(()=>{
+            tarjeta.remove();
+        })
+    })
     return tarjeta;
 }
 
