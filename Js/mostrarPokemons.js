@@ -16,7 +16,7 @@ function crearCard(nombre, precio, imagen, id){
                         </li>`;
     const eliminar = tarjeta.querySelector(".btnEliminar");
     eliminar.addEventListener("click", ()=> {
-        conexionAPI.eliminarProducto(id).then(()=>{
+        conexionAPI.eliminarPokemon(id).then(()=>{
             tarjeta.remove();
         })
     })
