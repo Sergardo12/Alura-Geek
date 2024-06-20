@@ -2,7 +2,7 @@ import { conexionAPI } from "./conexionAPI.js";
 
 const lista = document.querySelector("[data-lista]");
 
-function crearCard(nombre, precio, imagen){
+function crearCard(nombre, precio, imagen, id){
     const tarjeta = document.createElement("li");
     tarjeta.className = "imagen_item";
     tarjeta.innerHTML = `
@@ -24,8 +24,14 @@ function crearCard(nombre, precio, imagen){
 }
 
 async function listarPokemons (){
-    const listaAPI = await conexionAPI.listarImagenes(); // en esta parte, antes era const listAPI = await conexionAPI.listarPokemons()
+    try{
+        const listaAPI = await conexionAPI.listarImagenes(); // en esta parte, antes era const listAPI = await conexionAPI.listarPokemons()
 
     listaAPI.forEach(tarjeta=>lista.appendChild(crearCard(tarjeta.nombre, tarjeta.precio, tarjeta.imagen)))
+    }
+    catch(error){
+        console.error('Error al listar los Pokémon', error);
+    }
+    
 }
 listarPokemons()

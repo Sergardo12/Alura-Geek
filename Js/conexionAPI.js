@@ -20,7 +20,7 @@ async function enviarImagen(nombre, precio, imagen){
     
     return conexionConvertida;
 }
-async function eliminarProducto(id) {
+async function eliminarPokemon(id) {
     const response = await fetch(`http://localhost:3001/pokemons/${id}`, {
         method: 'DELETE'
     });
@@ -32,4 +32,4 @@ async function eliminarProducto(id) {
 }
 
 
-export const conexionAPI = { listarImagenes, enviarImagen, eliminarProducto };
+export const conexionAPI = { listarImagenes, enviarImagen, eliminarPokemon };
