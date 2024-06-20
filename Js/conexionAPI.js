@@ -1,24 +1,34 @@
 async function listarImagenes(){
-    const conexion = await fetch("http://localhost:3001/pokemons");
+    try{
+        const conexion = await fetch("http://localhost:3001/pokemons");
 
-    const conexionConvertida = conexion.json();
+        const conexionConvertida = conexion.json();
+        
+        return conexionConvertida;
+    } catch (error){
+        throw new Error(`Error al obtener la lista de imágenes: ${error.message}`);
+    }
     
-    return conexionConvertida;
 }
 
 async function enviarImagen(nombre, precio, imagen){
-    const conexion = await fetch("http://localhost:3001/pokemons", {
-        method: "POST",
-        headers: {"Content-type": "application/json"},
-        body: JSON.stringify({
-            nombre:nombre,
-            precio:`${precio}`,
-            imagen:imagen
-        })
-    });
-    const conexionConvertida = conexion.json();
+    try{
+        const conexion = await fetch("http://localhost:3001/pokemons", {
+            method: "POST",
+            headers: {"Content-type": "application/json"},
+            body: JSON.stringify({
+                nombre:nombre,
+                precio:`${precio}`,
+                imagen:imagen
+            })
+        });
+        const conexionConvertida = conexion.json();
+        
+        return conexionConvertida;
+    } catch(error){
+        throw new Error(`Error al enviar la imagen: ${error.message}`);
+    }
     
-    return conexionConvertida;
 }
 async function eliminarPokemon(id) {
     try{
@@ -31,7 +41,7 @@ async function eliminarPokemon(id) {
             console.error('Error al eliminar el producto');
         }
     } catch(error){
-        console.error('Error en la solicitud DELETE:', error);
+        throw new Error(`Error en la solicitud DELETE: ${error.message}`);
     }
     }
     

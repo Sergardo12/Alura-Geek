@@ -15,13 +15,19 @@ function crearCard(nombre, precio, imagen, id){
                             </div>
                         </li>`;
     const eliminar = tarjeta.querySelector(".btnEliminar");
-    eliminar.addEventListener("click", ()=> {
-        conexionAPI.eliminarPokemon(id).then(()=>{
-            tarjeta.remove();
+    eliminar.addEventListener("click", async ()=> {
+        try{
+            await conexionAPI.eliminarPokemon(id);
+            tarjeta.remove()
+            console.log(`Producto con id ${id} eliminado correctamente.`);
+        }catch(error){
+            console.error(`Error al eliminar el producto con id ${id}:`, error);
+        }
         })
-    })
-    return tarjeta;
-}
+        return tarjeta;
+    }
+    
+
 
 async function listarPokemons (){
     try{
