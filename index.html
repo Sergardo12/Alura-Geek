@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/path/to/css/jam-icons.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Challege Alura Geek</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>ALURA GEEK </h1>
+        </nav>
+    </header>
+    <main>
+        <section class="productos-bloque">
+            <div class="productos">
+                <h2>MIS POKEMON:</h2>
+                <div class="content-lista">
+                    <ul class="lista-productos" data-lista>
+                       
+                    </ul>
+                </div>
+            </div>
+            <form class="container-form" id="formulario" data-formulario>
+                <div>
+                    <h2>AGREGAR POKEMON</h2>
+                </div>
+                <div class="input-field">
+                    <input type="text"  required data-nombre>
+                    <label>Ingrese nombre</label>
+                </div>
+                <div class="input-field">
+                    <input type="text"  required data-precio>
+                    <label>Precio...</label>
+                </div>
+                <div class="input-field">
+                    <input type="url"  required data-imagen>
+                    <label>Imagen...</label>
+                </div>
+                <div class="buttons">
+                    <input class="botonEnviar" type="submit" value="Enviar">
+                    <input class="botonLimpiar">Limpiar</input>
+                </div>
+                
+            </form>       
+           
+        </section>
+    </main>
+    <script src="./Js/mostrarPokemons.js" type="module"></script>
+    <script src="./Js/crearImagen.js" type="module"></script>
+</body>
+</html>

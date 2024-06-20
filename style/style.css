@@ -1,0 +1,22 @@
+@import url(header.css);
+@import url(productos.css);
+@import url(form.css);
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    font-optical-sizing: auto;
+    font-weight: peso;
+    font-style: normal;
+}
+ul, li ol{
+    list-style: none;
+}
+body{
+   
+    background-color: #050a21;
+    color: #fff;
+    
+}
