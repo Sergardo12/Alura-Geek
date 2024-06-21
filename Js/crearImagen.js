@@ -14,7 +14,7 @@ async function crearImagen(evento){
     
     
 
-    await conexionAPI.enviarImagen(nombre, precio, imagen, id);
+    await conexionAPI.enviarImagen(nombre, precio, imagen);
 
     
 }
