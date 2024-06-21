@@ -1,5 +1,6 @@
 .productos-bloque{
     display: flex;
+    margin: 2rem auto;
 }
 .productos h2{
     text-align: center;

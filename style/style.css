@@ -1,6 +1,7 @@
 @import url(header.css);
 @import url(pokemons.css);
 @import url(form.css);
+@import url(footer.css);
 *{
     margin: 0;
     padding: 0;

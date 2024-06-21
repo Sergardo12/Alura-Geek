@@ -1,0 +1,10 @@
+footer {
+   background-color: rgb(42, 35, 83);
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+}
+footer p{
+    text-align: center;
+    margin: 2rem 0;
+}
