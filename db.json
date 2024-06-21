@@ -12,42 +12,7 @@
       "precio": 15,
       "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d3/latest/20161219020311/Decidueye.png/1200px-Decidueye.png",
       "id": 2
-    },
-    {
-      "nombre": "Cinderace",
-      "precio": 30,
-      "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/36/latest/20191128020743/Cinderace.png/1200px-Cinderace.png",
-      "id": 3
-    },
-    {
-      "nombre": "Mega Blastoise",
-      "precio": 30,
-      "imagen": "https://cdn.staticneo.com/w/pokemon/e/e2/MegaBlastoise.png",
-      "id": 4
-    },
-    {
-      "nombre": "Pikachu",
-      "precio": "s./NaN",
-      "imagen": "https://th.bing.com/th/id/R.bee362547fd3d944b538cc73e0d560b4?rik=vjXmVrN2TQ2TwQ&pid=ImgRaw&r=0",
-      "id": 5
-    },
-    {
-      "nombre": "charmander",
-      "precio": "s./50",
-      "imagen": "https://th.bing.com/th/id/R.87765d75faffb4d384adaadda9ef70a7?rik=X4wI0%2bYEC3nUMw&pid=ImgRaw&r=0",
-      "id": 6
-    },
-    {
-      "nombre": "Roselia",
-      "precio": "40",
-      "imagen": "https://th.bing.com/th/id/R.2db085d37b80906f43e7c5108249ac4c?rik=QWmy3Ynz5THu%2bw&pid=ImgRaw&r=0",
-      "id": 7
-    },
-    {
-      "nombre": "Charizard",
-      "precio": "100",
-      "imagen": "https://th.bing.com/th/id/R.c137ec0d43a67828128221911a58a9f8?rik=uK1UjXvFuhtZsA&riu=http%3a%2f%2fwww.pokemasters.net%2fpokedex%2fimages%2fpokemon%2f6000.png&ehk=K6YpM24hy0tce1BU%2b3h8nqr6UTdzt409zWOZgRdp5qc%3d&risl=&pid=ImgRaw&r=0",
-      "id": 8
     }
+   
   ]
 }

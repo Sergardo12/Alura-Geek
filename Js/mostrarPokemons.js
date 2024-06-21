@@ -36,7 +36,7 @@ async function listarPokemons (){
     listaAPI.forEach(tarjeta=>lista.appendChild(crearCard(tarjeta.nombre, tarjeta.precio, tarjeta.imagen)))
     }
     catch(error){
-        console.error('Error al listar los Pokémon', error);
+        console.log(error)
     }
     
 }

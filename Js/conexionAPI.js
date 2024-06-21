@@ -6,7 +6,7 @@ async function listarImagenes(){
         
         return conexionConvertida;
     } catch (error){
-        throw new Error(`Error al obtener la lista de imágenes: ${error.message}`);
+        console.log(error)
     }
     
 }
@@ -41,7 +41,7 @@ async function eliminarPokemon(id) {
         //     console.error('Error al eliminar el producto');
         // }
     } catch(error){
-        throw new Error(`Error en la solicitud DELETE: ${error.message}`);
+        console.log(error)
     }
     }
     
