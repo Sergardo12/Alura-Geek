@@ -1,18 +1,22 @@
 {
   "pokemons": [
     {
-      
       "nombre": "Tsareena",
       "precio": 20,
       "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/54/latest/20161014163450/Tsareena.png/1200px-Tsareena.png",
-      "id": 1
+      "id": "1"
     },
     {
       "nombre": "Decidueye",
       "precio": 15,
       "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d3/latest/20161219020311/Decidueye.png/1200px-Decidueye.png",
-      "id": 2
+      "id": "2"
+    },
+    {
+      "id": "0fc1",
+      "nombre": "pikachu",
+      "precio": "50",
+      "imagen": "https://www.gratistodo.com/wp-content/uploads/2016/11/Pikachu-9.png"
     }
-   
   ]
 }

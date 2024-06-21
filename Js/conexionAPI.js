@@ -30,9 +30,9 @@ async function enviarImagen(nombre, precio, imagen){
     }
     
 }
-async function eliminarPokemon(id) {
+async function eliminarPokemon() {
     try{
-        const eliminado = await fetch(`http://localhost:3001/pokemons/${id}`, {
+        const eliminado = await fetch(`http://localhost:3001/pokemons/`, {
             method: 'DELETE'
         });
         // if (eliminado.ok) {
