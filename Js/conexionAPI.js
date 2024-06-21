@@ -32,14 +32,14 @@ async function enviarImagen(nombre, precio, imagen){
 }
 async function eliminarPokemon(id) {
     try{
-        const response = await fetch(`http://localhost:3001/pokemons/${id}`, {
+        const eliminado = await fetch(`http://localhost:3001/pokemons/${id}`, {
             method: 'DELETE'
         });
-        if (response.ok) {
-            console.log(`Producto con id ${id} eliminado`);
-        } else {
-            console.error('Error al eliminar el producto');
-        }
+        // if (eliminado.ok) {
+        //     console.log(`Producto con id ${id} eliminado`);
+        // } else {
+        //     console.error('Error al eliminar el producto');
+        // }
     } catch(error){
         throw new Error(`Error en la solicitud DELETE: ${error.message}`);
     }
