@@ -19,7 +19,7 @@ function crearCard(nombre, precio, imagen, id){
         try{
             await conexionAPI.eliminarPokemon(id);
             tarjeta.remove()
-            console.log(`Producto con id ${id} eliminado correctamente.`);
+            console.log(`Pokemon con id ${id} eliminado correctamente.`);
         }catch(error){
             console.error(`Error al eliminar el producto con id ${id}:`, error);
         }
