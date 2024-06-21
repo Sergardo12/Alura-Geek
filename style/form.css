@@ -65,3 +65,10 @@ input:focus ~ label{
     background: #060b23;
     transition: all 0.3s ;
 }
+@media (max-width: 768px ){
+    .container-form{
+        order: -1;
+        margin: 0 auto;
+        width: 25rem;
+    }
+}

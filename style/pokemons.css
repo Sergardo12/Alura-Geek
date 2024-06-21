@@ -40,3 +40,19 @@
     cursor: pointer;
     text-align: center;
 }
+@media(max-width:480px ){
+    .productos-bloque{
+        display: flex;
+        justify-content: center;
+        
+        flex-direction: column;
+        gap: 2rem
+    }
+    .lista-productos{
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto;
+        width: 20rem;
+        order: 0;
+    }
+}
