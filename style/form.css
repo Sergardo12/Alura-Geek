@@ -69,6 +69,6 @@ input:focus ~ label{
     .container-form{
         order: -1;
         margin: 0 auto;
-        width: 25rem;
+        width: 24rem;
     }
 }
