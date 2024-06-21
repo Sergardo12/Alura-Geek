@@ -1,8 +1,19 @@
 {
   "pokemons": [
     {
+      "id": 1,
+      "nombre": "Tsareena",
+      "precio": 20,
+      "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/54/latest/20161014163450/Tsareena.png/1200px-Tsareena.png"
+      
+    },
+    {
+      "id": 2,
+      "nombre": "Decidueye",
+      "precio": 15,
+      "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d3/latest/20161219020311/Decidueye.png/1200px-Decidueye.png"
       
     }
-   
+  
   ]
 }
