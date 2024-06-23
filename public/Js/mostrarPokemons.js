@@ -18,7 +18,7 @@ function crearCard(nombre, precio, imagen, id){
             </div>
             </li>`;
            
-
+   
         return tarjeta;
     }
     
