@@ -1,10 +1,16 @@
 {
   "pokemons": [
     {
-      "nombre": "Tsareena",
-      "precio": "14",
-      "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/54/latest/20161014163450/Tsareena.png/1200px-Tsareena.png",
+      "nombre": "Cinderace",
+      "precio": "13",
+      "imagen": "https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/36/latest/20191128020743/Cinderace.png/1200px-Cinderace.png",
       "id": 1
+    },
+    {
+      "nombre": "Pikachu",
+      "precio": "34",
+      "imagen": "https://th.bing.com/th/id/R.be7dc5ce53cfa8a81d01d3389d194903?rik=EYHPHS%2bCGPnO2g&riu=http%3a%2f%2fimg1.wikia.nocookie.net%2f__cb20120603213349%2fsonicpokemon%2fimages%2f7%2f77%2fPikachu.png&ehk=rPWLFmhxA5gGXaEGy4OeQGixq2Y0NJ1Omlr7h6FzWvY%3d&risl=&pid=ImgRaw&r=0",
+      "id": 2
     }
   ]
 }

@@ -1,5 +1,5 @@
 import { conexionAPI } from "./conexionAPI.js";
-let pokemons = await conexionAPI.listarImagenes();
+// let pokemons = await conexionAPI.listarImagenes();
 
 
 const lista = document.querySelector("[data-lista]");
@@ -7,28 +7,18 @@ const lista = document.querySelector("[data-lista]");
 function crearCard(nombre, precio, imagen, id){
     const tarjeta = document.createElement("li");
     tarjeta.className = "imagen_item";
-    for(const pokemon of pokemons){
+    
         tarjeta.innerHTML = `
             <li class="imagen_item">
-            <div class="lista-productos-item" data-id=${pokemon.id}>
+            <div class="lista-productos-item" data-id=${id}>
             <img class = "imagen-pokemon" src="${imagen}"  alt="imagen">
             <h3>${nombre}</h3>
             <p>s./${precio}</p>
             <button class="btnEliminar">Eliminar</button>
             </div>
             </li>`;
-    }
-    const eliminar = tarjeta.querySelector(".btnEliminar");
-    eliminar.addEventListener("click", async (evento)=> {
-        console.log(evento)
-        try{
-            await conexionAPI.eliminarPokemon(id);
-            tarjeta.remove()
-            console.log(`Pokemon eliminado correctamente.`);
-        }catch(error){
-            console.error(error);
-        }
-        })
+           
+
         return tarjeta;
     }
     
