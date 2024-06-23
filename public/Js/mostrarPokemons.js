@@ -11,7 +11,7 @@ function crearCard(nombre, precio, imagen, id){
         tarjeta.innerHTML = `
             <li class="imagen_item">
             <div class="lista-productos-item" data-id=${pokemon.id}>
-            <img class = "imagen-pokemon" src="${imagen}"  alt="">
+            <img class = "imagen-pokemon" src="${imagen}"  alt="imagen">
             <h3>${nombre}</h3>
             <p>s./${precio}</p>
             <button class="btnEliminar">Eliminar</button>

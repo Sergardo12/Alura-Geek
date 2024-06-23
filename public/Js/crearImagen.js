@@ -1,5 +1,6 @@
 import { conexionAPI } from "./conexionAPI.js";
 
+
 const formulario = document.querySelector("[data-formulario]");
 
 
@@ -16,7 +17,7 @@ async function crearImagen(evento){
     
 
     await conexionAPI.enviarImagen(nombre, precio, imagen);
-
+  
     
 }
 

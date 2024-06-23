@@ -4,6 +4,7 @@ async function listarImagenes(){
 
         const conexionConvertida = await conexion.json();
         console.log(conexionConvertida)
+        
         return conexionConvertida;
 
     } catch (error){
@@ -31,7 +32,7 @@ async function enviarImagen(nombre, precio, imagen){
     }
     
 }
-async function eliminarPokemon() {
+async function eliminarPokemon(id) {
     try{
         const eliminado = await fetch(`http://localhost:3000/pokemons/${id}`, {
             method: 'DELETE'
