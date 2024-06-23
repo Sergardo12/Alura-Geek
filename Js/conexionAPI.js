@@ -40,6 +40,7 @@ async function eliminarPokemon() {
         // } else {
         //     console.error('Error al eliminar el producto');
         // }
+        
     } catch(error){
         console.log(error)
     }
