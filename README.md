@@ -7,4 +7,4 @@ Para esto mi desafio Alura Geek trata de una lista de pokemons, en donde tenemos
 
 **COMO LO PONEMOS EN MARCHA**
 Para darle funcion a la página tenemos que correr nuestro servidor, colocamos en nuestra terminal lo siguiente:
-json-server --watch db.json --port 3001 --host localhost, con eso ya estamos corriendo nuestro servidor para poner en marcha nuestro desafio.
+json-server --watch \db.json --port 3000 con eso ya estamos corriendo nuestro servidor para poner en marcha nuestro desafio.
