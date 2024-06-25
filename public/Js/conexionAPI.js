@@ -3,7 +3,7 @@ async function listarImagenes(){
         const conexion = await fetch("http://localhost:3000/pokemons");
 
         const conexionConvertida = await conexion.json();
-        console.log(conexionConvertida)
+       
 
         return conexionConvertida;
 
@@ -35,14 +35,15 @@ async function enviarImagen(nombre, precio, imagen){
 async function eliminarPokemon(id) {
     try{
         const eliminado = await fetch(`http://localhost:3000/pokemons/${id}`, {
-            method: 'DELETE'
+            method: 'DELETE',
+            headers: {"Content-Type":"application/json"}
         });
          if (!eliminado.ok) {
             throw new Error('No se pudo eliminar el Pokémon');
         }
 
-        console.log(`Pokemon con id ${id} eliminado correctamente`)
-        // await eliminado.json();
+        // console.log(`Pokemon con id ${id} eliminado correctamente`)
+    
     } catch(error){
         console.log(error)
     }
